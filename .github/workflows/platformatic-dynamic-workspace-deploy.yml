@@ -21,7 +21,8 @@ jobs:
      DATABASE_URL: ${{ secrets.DATABASE_URL }}
      PLT_SERVER_LOGGER_LEVEL: info 
      PORT: 3042 
-     PLT_SERVER_HOSTNAME: 127.0.0.1 
+     PLT_SERVER_HOSTNAME: 127.0.0.1
+     DEPLOY_SERVICE_HOST: https://plt-development-deploy-service.fly.dev 
 
     steps:
       - name: Checkout application project repository
@@ -39,7 +40,10 @@ jobs:
           label: ${{ github.event.inputs.label }}
     outputs:
       deployment_id: ${{ steps.deploy-project.outputs.deployment_id }}
+
   calculate_risk:
+    env:
+      DEPLOY_SERVICE_HOST: https://plt-development-deploy-service.fly.dev 
     permissions:
       contents: read
       pull-requests: write
