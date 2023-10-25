@@ -1,7 +1,5 @@
 # Platformatic DB API
 
-
-
 This is a generated [Platformatic DB](https://docs.platformatic.dev/docs/reference/db/introduction) application.
 
 ## Requirements
