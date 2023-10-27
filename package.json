@@ -1,4 +1,5 @@
 {
+  "name": "my-app",
   "scripts": {
     "start": "platformatic start",
     "test": "node --test test/*/*.test.js",
