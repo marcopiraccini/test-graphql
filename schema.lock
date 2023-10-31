@@ -88,13 +88,13 @@
       },
       {
         "cid": 1,
-        "name": "title",
+        "name": "name",
         "type": "TEXT",
         "notnull": 1,
         "dflt_value": null,
         "pk": 0,
         "hidden": 0,
-        "column_name": "title",
+        "column_name": "name",
         "udt_name": "text",
         "is_nullable": "NO",
         "is_generated": "NO"
